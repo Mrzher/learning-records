@@ -21,3 +21,18 @@ xlim,ylim：分别设置X,Y轴的显示范围
 legend:显示图例
 4.matlibplot读取图像
 imread和imshow()
+5.Linux基础命令
+cd / 表示切换到根目录
+ls
+cat 读取文件内容及拼接文件
+rm <文件> 或 rm -r <文件夹>
+mkdir
+cp <文件> <目标文件> 或者cp -r<文件夹><目标文件夹>
+kill PID码 ps au查看进程
+pwd
+tar 文件压缩
+unzip 文件解压
+6.shell脚本文件
+$用来获取变量值
+7.git
+

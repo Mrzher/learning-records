@@ -1,10 +1,10 @@
-# learning-records
-2019/07/07
-1.位置参数 默认参数 *可变参数 **关键字参数
-2.NumPy 
-数组 np.array() 列表 元组 
-np.arange() np.linspace()
-np.zeros() :生成元素全是0的数组 np.ones()：生成元素全是1的数组 np.zeros_like(a):生成形状和a一样且元素全是0的数组 np.ones_like(a):生成形状和a一样且元素全是1的数组
+# learning-records  
+2019/07/07  
+1.位置参数 默认参数 *可变参数 **关键字参数  
+2.NumPy  
+数组 np.array() 列表 元组   
+np.arange() np.linspace()  
+np.zeros() :生成元素全是0的数组 np.ones()：生成元素全是1的数组 np.zeros_like(a):生成形状和a一样且元素全是0的数组 np.ones_like(a):生成形状和a一样且元素全是1的数组  
 随机数组 np.random.rand(2,2)   b = np.random.randn(2,2)   c = np.random.randint(0,9,(2,2))
 a.shape   a.dtype   a.ndim
 存取：切片法和整数列表

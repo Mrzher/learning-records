@@ -65,13 +65,13 @@ tensorboard --logdir cifar10_eval/ --port 6007
 （3）用Dataset API读入  
 16.TFRecords文件的生成  
 (1)建立tfrecord存储器  
-tf.python_io.TFRecordWriter(path)
-(2)构造每个样本的Example模块
-writer=tf.python_io.TFRecordWriter(filename)
-example=tf.train.Example(features=tf.train.Features(feature={'i':_int64_feature(i),'j':_int64_feature(j)}))
-writer.write(example.SerializeToString())          #序列转换成字符串
-#如上读文件与如下写文件对应
-filename_queue=tf.train.string_input_producer(files,shuffle=False)     #传入文件名list，系统将其转化为文件名queue  
+tf.python_io.TFRecordWriter(path)  
+(2)构造每个样本的Example模块  
+writer=tf.python_io.TFRecordWriter(filename)  
+example=tf.train.Example(features=tf.train.Features(feature={'i':_int64_feature(i),'j':_int64_feature(j)}))  
+writer.write(example.SerializeToString())#序列转换成字符串  
+#如上读文件与如下写文件对应  
+filename_queue=tf.train.string_input_producer(files,shuffle=False) #传入文件名list，系统将其转化为文件名queue  
 reader=tf.TFRecordReader()  
 _,serialized=reader.read(filename_queue)  
 features=tf.parse_single_example(serialized,features={'i':tf.FixedLenFeature([],tf.int64),'j':tf.FixedLenFeature([],tf.int64)}) #tf.TFRecordReader()的parse_single_example()解析器，用于将Example协议内存块解析为张量  

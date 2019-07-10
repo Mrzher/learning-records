@@ -76,3 +76,5 @@ reader=tf.TFRecordReader()
 _,serialized=reader.read(filename_queue)  
 features=tf.parse_single_example(serialized,features={'i':tf.FixedLenFeature([],tf.int64),'j':tf.FixedLenFeature([],tf.int64)}) #tf.TFRecordReader()的parse_single_example()解析器，用于将Example协议内存块解析为张量  
 i,j=features['i'],features['j']  
+http://warmspringwinds.github.io/tensorflow/tf-slim/2016/12/21/tfrecords-guide/  
+

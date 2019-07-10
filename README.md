@@ -77,4 +77,9 @@ _,serialized=reader.read(filename_queue)
 features=tf.parse_single_example(serialized,features={'i':tf.FixedLenFeature([],tf.int64),'j':tf.FixedLenFeature([],tf.int64)}) #tf.TFRecordReader()的parse_single_example()解析器，用于将Example协议内存块解析为张量  
 i,j=features['i'],features['j']  
 http://warmspringwinds.github.io/tensorflow/tf-slim/2016/12/21/tfrecords-guide/  
+17.Python中的下划线  
+单个下划线_作为名称使用：用作被丢弃的名称  
+单下划线前缀的名称（例如_shahriar）：指定了这个名称是“私有的”  
+双下划线前缀的名称（例如__shahriar）：Python会改写这些名称，以免与子类中定义的名称产生冲突。  
+前后都带有双下划线的名称（例如__init__）：一种确保Python系统中的名称不会跟用户自定义的名称发生冲突的方式  
 

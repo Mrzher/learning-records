@@ -63,11 +63,12 @@ tensorboard --logdir cifar10_eval/ --port 6007
 （1）用占位符placeholder读入  
 （2）用队列的形式建立文件到Tensor的映射  
 （3）用Dataset API读入  
-16.TFRecords文件的生成  
+16.TFRecords文件的生成与读取  
+TFRecords文件包含了tf.train.Example 协议内存块(protocol buffer)(协议内存块包含了字段 Features)。我们可以写一段代码获取你的数据，将数据填入到Example协议内存块(protocol buffer)，将协议内存块序列化为一个字符串，并且通过tf.python_io.TFRecordWriter 写入到TFRecords文件。  
+从TFRecords文件中读取数据， 可以使用tf.TFRecordReader的tf.parse_single_example解析器。这个操作可以将Example协议内存块(protocol buffer)解析为张量。  
 (1)建立tfrecord存储器  
-tf.python_io.TFRecordWriter(path)  
-(2)构造每个样本的Example模块  
 writer=tf.python_io.TFRecordWriter(filename)  
+(2)构造每个样本的Example模块  
 example=tf.train.Example(features=tf.train.Features(feature={'i':_int64_feature(i),'j':_int64_feature(j)}))  
 writer.write(example.SerializeToString())#序列转换成字符串  
 #如上读文件与如下写文件对应  
@@ -82,4 +83,12 @@ http://warmspringwinds.github.io/tensorflow/tf-slim/2016/12/21/tfrecords-guide/
 单下划线前缀的名称（例如_shahriar）：指定了这个名称是“私有的”  
 双下划线前缀的名称（例如__shahriar）：Python会改写这些名称，以免与子类中定义的名称产生冲突。  
 前后都带有双下划线的名称（例如__init__）：一种确保Python系统中的名称不会跟用户自定义的名称发生冲突的方式  
-
+2019/07/11  
+18.tmux  
+https://blog.csdn.net/lihao21/article/details/68958515  
+https://segmentfault.com/a/1190000016283278  
+19.tf.decode_raw()  
+tf.decode_raw函数的意思是将原来编码为字符串类型的变量重新变回来  
+20.  
+协调器 tf.train.Coordinator  
+入队线程启动器 tf.train.start_queue_runners  

@@ -62,7 +62,6 @@ tensorboard --logdir cifar10_eval/ --port 6007
 model.ckpt.meta文件保存了TensorFlow计算图的结构  
 model.ckpt.index是对应模型的索引文件  
 model.ckpt.data-00000-of-00001文件保存了TensorFlow程序中每一个变量的取值  
-
 15. Tensorflow中读入数据的三种方法：  
 （1）用占位符placeholder读入  
 （2）用队列的形式建立文件到Tensor的映射  

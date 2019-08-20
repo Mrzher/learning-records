@@ -98,14 +98,17 @@ tf.decode_raw函数的意思是将原来编码为字符串类型的变量重新�
 2019/08/19  
 ssh cuizhe@hass.top -p 7715        1234  
 wget下载anaconda安装包  
-安装anaconda  bash Anaconda3-5.2.0-Linux-x86_64.sh
-创建py36torch41环境
-conda activate pytorch  
+安装anaconda  bash Anaconda3-5.2.0-Linux-x86_64.sh  
+创建py36torch41环境  
+conda activate py36torch41  
 conda init  
 2019/08/20  
-虚拟环境建立好了之后使用如下语句激活虚拟环境source activate pytorch,如果需要退出该虚拟环境，可以使用如下命令source deactivate  
+虚拟环境建立好了之后使用如下语句激活虚拟环境source activate py36torch41,如果需要退出该虚拟环境，可以使用如下命令source deactivate  
 cuda版本10.0.130  
-pytorch官网获取安装指令conda install pytorch=0.4.1 torchvision cudatoolkit=10.0 -c pytorch  
+pytorch官网获取安装指令  
+py36torch41环境下conda install pytorch=0.4.1 torchvision cudatoolkit=10.0 -c pytorch  
 CUDA看作是一个工作台 cuDNN是基于CUDA的深度学习GPU加速库 想要在CUDA上运行深度神经网络，就要安装cuDNN  
 只要把cuDNN文件复制到CUDA的对应文件夹里就可以，即是所谓插入式设计，把cuDNN数据库添加CUDA里，cuDNN是CUDA的扩展计算库，不会对CUDA造成其他影响。  
-运行poolnet
+运行poolnet  
+conda install opencv  
+

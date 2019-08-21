@@ -111,4 +111,5 @@ CUDA看作是一个工作台 cuDNN是基于CUDA的深度学习GPU加速库 想�
 只要把cuDNN文件复制到CUDA的对应文件夹里就可以，即是所谓插入式设计，把cuDNN数据库添加CUDA里，cuDNN是CUDA的扩展计算库，不会对CUDA造成其他影响。  
 运行poolnet  
 conda install opencv  
-
+2019/08/21  
+运行poolnet时遇到第一个错误，dataset.py中line27 line28使用os.path.join第二个参数的首个字符如果是"/" , 拼接出来的路径会不包含第一个参数  

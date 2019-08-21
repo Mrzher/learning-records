@@ -113,3 +113,6 @@ CUDA看作是一个工作台 cuDNN是基于CUDA的深度学习GPU加速库 想�
 conda install opencv  
 2019/08/21  
 运行poolnet时遇到第一个错误，dataset.py中line27 line28使用os.path.join第二个参数的首个字符如果是"/" , 拼接出来的路径会不包含第一个参数  
+linux下如何删除整个文件夹  
+运行basnet  
+Type 给出是在GPU中使用的是计算（用C代表）还是图形图像处理（用G代表）  

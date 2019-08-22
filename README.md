@@ -116,3 +116,9 @@ conda install opencv
 linux下如何删除整个文件夹  
 运行basnet  
 Type 给出是在GPU中使用的是计算（用C代表）还是图形图像处理（用G代表）  
+修改basnet的epoch为20  
+2019/08/22  
+poolnet训练完成，进行测试python main.py --mode='test' --model='results/run-16/models/final.pth' --test_fold='results/run-16-sal-e' --sal_mode='e'，测试完成后生成的显著性预测图会保存在results/run-16-sal-e中  
+指标评测：  
+1.SalMetric 按照https://github.com/Andrew-Qibin/SalMetric 完成安装后import salmetric 出错No module named 'salmetric'  
+2.Evaluate-SOD https://github.com/DengPingFan/Evaluate-SOD 可以运行出结果

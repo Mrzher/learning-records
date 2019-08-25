@@ -123,3 +123,5 @@ poolnet训练完成，进行测试python main.py --mode='test' --model='results/
 1.SalMetric 按照https://github.com/Andrew-Qibin/SalMetric 完成安装后import salmetric 出错No module named 'salmetric'  
 按照https://github.com/Andrew-Qibin/SalMetric/issues/2 方法顺利解决  
 2.Evaluate-SOD https://github.com/DengPingFan/Evaluate-SOD 可以运行出结果  
+2018/08/25  
+CUDA_VISIBLE_DEVICES=0 python2 train.py  

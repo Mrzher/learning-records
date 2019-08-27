@@ -125,4 +125,6 @@ poolnet训练完成，进行测试python main.py --mode='test' --model='results/
 2.Evaluate-SOD https://github.com/DengPingFan/Evaluate-SOD 可以运行出结果  
 2018/08/25  
 CUDA_VISIBLE_DEVICES=0 python2 train.py  
-安装网络可视化工具 tensorflow tensorboard tensorboardX
+安装网络可视化工具 tensorflow tensorboard tensorboardX  
+向服务器考文件 cd /home/mnt2 优盘位置：/media/cuizhe/ 直接cp命令拷贝即可  
+

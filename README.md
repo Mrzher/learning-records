@@ -131,4 +131,4 @@ CUDA_VISIBLE_DEVICES=0 python2 train.py
 Early works utilize CNNs to determine whether image regions are salient or not [15, 16, 32, 44]. Although these models have achieved much better performance than traditional methods, it is time-consuming to predict saliency scores for image regions.  
 Then researchers develop more effective models based on the successful fully convolutional network [24].   
 CUDA_VISIBLE_DEVICES=0 python2 train.py  
-
+删除文件夹实例：rm -rf /var/log/httpd/access  

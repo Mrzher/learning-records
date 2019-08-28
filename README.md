@@ -127,4 +127,6 @@ poolnet训练完成，进行测试python main.py --mode='test' --model='results/
 CUDA_VISIBLE_DEVICES=0 python2 train.py  
 安装网络可视化工具 tensorflow tensorboard tensorboardX  
 向服务器考文件 cd /home/mnt2 优盘位置：/media/cuizhe/ 直接cp命令拷贝即可  
-
+2018/08/28  
+Early works utilize CNNs to determine whether image regions are salient or not [15, 16, 32, 44]. Although these models have achieved much better performance than traditional methods, it is time-consuming to predict saliency scores for image regions.  
+Then researchers develop more effective models based on the successful fully convolutional network [24].   

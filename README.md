@@ -123,12 +123,15 @@ poolnet训练完成，进行测试python main.py --mode='test' --model='results/
 1.SalMetric 按照https://github.com/Andrew-Qibin/SalMetric 完成安装后import salmetric 出错No module named 'salmetric'  
 按照https://github.com/Andrew-Qibin/SalMetric/issues/2 方法顺利解决  
 2.Evaluate-SOD https://github.com/DengPingFan/Evaluate-SOD 可以运行出结果  
-2018/08/25  
+2019/08/25  
 CUDA_VISIBLE_DEVICES=0 python2 train.py  
 安装网络可视化工具 tensorflow tensorboard tensorboardX  
 向服务器考文件 cd /home/mnt2 优盘位置：/media/cuizhe/ 直接cp命令拷贝即可  
-2018/08/28  
+2019/08/28  
 Early works utilize CNNs to determine whether image regions are salient or not [15, 16, 32, 44]. Although these models have achieved much better performance than traditional methods, it is time-consuming to predict saliency scores for image regions.  
 Then researchers develop more effective models based on the successful fully convolutional network [24].   
 CUDA_VISIBLE_DEVICES=0 python2 train.py  
 删除文件夹实例：rm -rf /var/log/httpd/access  
+2019/08/29  
+du -h --max-depth=1 /home/cuizhe/ 查看当前目录及子目录大小  
+df -h /home/cuizhe/ 查看目录所在的分区  

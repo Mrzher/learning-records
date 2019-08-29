@@ -135,3 +135,13 @@ CUDA_VISIBLE_DEVICES=0 python2 train.py
 2019/08/29  
 du -h --max-depth=1 /home/cuizhe/ 查看当前目录及子目录大小  
 df -h /home/cuizhe/ 查看目录所在的分区  
+conda使用教程  
+conda env list  
+conda create -n caffe python=3.6  
+conda remove -n caffe --all  
+anaconda下安装caffe:https://blog.csdn.net/abcd740181246/article/details/89878613  
+conda create -n caffe python=3.6 -c defaults  
+source activate caffe  
+conda install -c defaults caffe-gpu  
+今日任务：看cpd的代码  
+

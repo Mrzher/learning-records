@@ -144,4 +144,9 @@ conda create -n caffe python=3.6 -c defaults
 source activate caffe  
 conda install -c defaults caffe-gpu  
 今日任务：看cpd的代码  
-
+2019/09/05  
+Some simple yet eﬀective structures are constructed to combine the complementary cues of shallow and deep CNN features:  
+1.skip connections [21], Li, G., Xie, Y., Lin, L., Yu, Y.: Instance-level salient object segmentation. In: CVPR. pp. 247–256 (2017)   
+2.short connections [8], Hou, Q., Cheng, M.M., Hu, X., Borji, A., Tu, Z., Torr, P.: Deeply supervised salient object detection with short connections. In: CVPR. pp. 5300–5309 (2017)  
+3.dense connections [41], Xiao, H., Feng, J., Wei, Y., Zhang, M.: Deep salient object detection with dense connections and distraction diagnosis. IEEE Trans. Multimedia (2018)   
+4.adaptive aggregation [45], Zhang, P., Wang, D., Lu, H., Wang, H., Ruan, X.: Amulet: Aggregating multi-level convolutional features for salient object detection. In: ICCV. pp. 202–211 (2017)  

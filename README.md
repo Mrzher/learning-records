@@ -150,3 +150,4 @@ Some simple yet eﬀective structures are constructed to combine the complementa
 2.short connections [8], Hou, Q., Cheng, M.M., Hu, X., Borji, A., Tu, Z., Torr, P.: Deeply supervised salient object detection with short connections. In: CVPR. pp. 5300–5309 (2017)  
 3.dense connections [41], Xiao, H., Feng, J., Wei, Y., Zhang, M.: Deep salient object detection with dense connections and distraction diagnosis. IEEE Trans. Multimedia (2018)   
 4.adaptive aggregation [45], Zhang, P., Wang, D., Lu, H., Wang, H., Ruan, X.: Amulet: Aggregating multi-level convolutional features for salient object detection. In: ICCV. pp. 202–211 (2017)  
+超列 (Hypercolunm)  the concatenation of features corresponding to a spatial location across all the layers of the deep network

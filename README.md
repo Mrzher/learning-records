@@ -154,3 +154,5 @@ Some simple yet eﬀective structures are constructed to combine the complementa
 2019/09/15  
 refinement module is usually designed as a residual block which refines the predicted coarse saliency map S(soarse) by learning the residuals S(residual) between the saliency maps and the ground truth as:  
 S(refined)=S(coarse)+S(residual)  
+问题：ucf:checkerboard artifact  
+basnet:图5中的probability of the foreground and background是什么意思

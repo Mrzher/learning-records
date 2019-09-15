@@ -151,3 +151,6 @@ Some simple yet eﬀective structures are constructed to combine the complementa
 3.dense connections [41], Xiao, H., Feng, J., Wei, Y., Zhang, M.: Deep salient object detection with dense connections and distraction diagnosis. IEEE Trans. Multimedia (2018)   
 4.adaptive aggregation [45], Zhang, P., Wang, D., Lu, H., Wang, H., Ruan, X.: Amulet: Aggregating multi-level convolutional features for salient object detection. In: ICCV. pp. 202–211 (2017)  
 超列 (Hypercolunm)  the concatenation of features corresponding to a spatial location across all the layers of the deep network
+2019/09/15  
+refinement module is usually designed as a residual block which refines the predicted coarse saliency map S(soarse) by learning the residuals S(residual) between the saliency maps and the ground truth as:  
+S(refined)=S(coarse)+S(residual)  

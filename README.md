@@ -162,4 +162,12 @@ cat /usr/local/cuda/version.txt
 conda search pytorch  
 卸载anaconda rm -rf ~/anaconda3  
 conda list  
+useradd -m newuser  
 linux修改SSH密码  passwd {用户名}  
+cp -r /home/cuizhe/beichen/. /home/cuizhe2/beichen/  
+self.net.eval()  
+self.net.apply(weights_init)  
+if self.config.load == '':  
+  self.net.base.load_pretrained_model(torch.load(self.config.pretrained_model))  
+else:  
+  self.net.load_state_dict(torch.load(self.config.load))  

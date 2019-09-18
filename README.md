@@ -158,4 +158,8 @@ S(refined)=S(coarse)+S(residual)
 basnet:图5中的probability of the foreground and background是什么意思  
 2019/09/17  
 ps -aux | grep python  
-
+cat /usr/local/cuda/version.txt  
+conda search pytorch  
+卸载anaconda rm -rf ~/anaconda3  
+conda list  
+linux修改SSH密码  passwd {用户名}  

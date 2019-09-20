@@ -172,4 +172,4 @@ if self.config.load == '':
 else:  
   self.net.load_state_dict(torch.load(self.config.load))  
 删除文件夹下所有文件和文件夹rm -rf /home/cuizhe/DataSet/
-
+做一下poolnet的Ablation studies

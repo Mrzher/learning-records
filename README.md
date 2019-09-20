@@ -164,8 +164,8 @@ conda search pytorch
 conda list  
 useradd -m newuser  
 linux修改SSH密码  passwd {用户名}  
-cp -r /home/cuizhe/beichen/. /home/cuizhe2/beichen/  
-self.net.eval()  
+cp -r /home/cuizhe/PoolNet/results/ /home/cuizhe/Evaluate-SOD/pred/ 会将results文件夹拷贝到pred目录下
+self.net.eval()   pred
 self.net.apply(weights_init)  
 if self.config.load == '':  
   self.net.base.load_pretrained_model(torch.load(self.config.pretrained_model))  

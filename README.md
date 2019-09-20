@@ -165,6 +165,7 @@ conda list
 useradd -m newuser  
 linux修改SSH密码  passwd {用户名}  
 cp -r /home/cuizhe/PoolNet/results/ /home/cuizhe/Evaluate-SOD/pred/ 会将results文件夹拷贝到pred目录下
+cp -r /home/cuizhe/PoolNet/results/. /home/cuizhe/Evaluate-SOD/pred/ 会将results文件夹下的子文件和子文件夹拷贝到pred目录下
 self.net.eval()   pred
 self.net.apply(weights_init)  
 if self.config.load == '':  
@@ -172,4 +173,4 @@ if self.config.load == '':
 else:  
   self.net.load_state_dict(torch.load(self.config.load))  
 删除文件夹下所有文件和文件夹rm -rf /home/cuizhe/DataSet/
-做一下poolnet的Ablation studies
+做一下poolnet的Ablation studies  

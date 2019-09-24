@@ -187,3 +187,5 @@ SOD 300
 THUR15K 6232  
 HKUIS和DUT-OMRON中存在过小图片 将HKUIS中的过小图片从test.lst中删除后（test(delete).lst)再进行显著图预测，在评测时直接将真值图1806.png加进去进行评测  
 还有poolnet生成的预测图的文件名的后缀会干扰Evaluate_SOD评测时对预测图和真值图的排序配对。所以修改poolnet的solver.test的代码去掉无用的后缀  
+rm -rf ./HKUIS/可以删除文件夹  
+ls -lR|grep "^-"| wc -l可以查看当前文件夹下文件个数  

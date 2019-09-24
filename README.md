@@ -172,5 +172,18 @@ if self.config.load == '':
   self.net.base.load_pretrained_model(torch.load(self.config.pretrained_model))  
 else:  
   self.net.load_state_dict(torch.load(self.config.load))  
-删除文件夹下所有文件和文件夹rm -rf /home/cuizhe/DataSet/
-做一下poolnet的Ablation studies
+删除文件夹下所有文件和文件夹rm -rf /home/cuizhe/DataSet/  
+做一下poolnet的Ablation studies  
+DUT-OMRON 5168(1986)  
+DUT-TEST 5019  
+DUT_TRAIN 10553  
+ECSSD 1000  
+HKUIS 4447(3411)  
+MSRA-B 3000  
+PASCAL 850  
+SED1 100  
+SED2 100  
+SOD 300  
+THUR15K 6232  
+HKUIS和DUT-OMRON中存在过小图片 将HKUIS中的过小图片从test.lst中删除后（test(delete).lst)再进行显著图预测，在评测时直接将真值图1806.png加进去进行评测  
+还有poolnet生成的预测图的文件名的后缀会干扰Evaluate_SOD评测时对预测图和真值图的排序配对。所以修改poolnet的solver.test的代码去掉无用的后缀  

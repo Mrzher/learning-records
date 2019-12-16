@@ -1,4 +1,5 @@
-ssh cuizhe@124.16.75.183 -p 10080
+ssh cuizhe@124.16.75.183 -p 10080  
+ssh cuizhe@hass.top -p 7715  
 # learning-records  
 2019/07/07  
 1.位置参数 默认参数 *可变参数 **关键字参数  

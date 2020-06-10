@@ -1,5 +1,8 @@
-ssh cuizhe@124.16.75.183 -p 10080  
-ssh cuizhe@hass.top -p 7715  
+怀柔ssh cuizhe@124.16.75.183 -p 10080  
+东平房ssh cuizhe@hass.top -p 7715  ip:210.76.209.227
+东平房四卡的机子弄好了，ssh 用户名@mengdechao.top -p 9201  
+怀柔四卡的机子，通过需要校园网，通过平房这个机子连吧，ssh 用户名@124.16.75.183  
+
 # learning-records  
 2019/07/07  
 1.位置参数 默认参数 *可变参数 **关键字参数  

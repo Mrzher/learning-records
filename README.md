@@ -2,6 +2,7 @@
 东平房ssh cuizhe@hass.top -p 7715  ip:210.76.209.227  
 东平房四卡的机子弄好了，ssh 用户名@mengdechao.top -p 9201  
 怀柔四卡的机子，通过需要校园网，通过平房这个机子连吧，ssh 用户名@124.16.75.183  
+ssh acdart@124.16.70.221 默认端口 密码是1  
 
 # learning-records  
 2019/07/07  
